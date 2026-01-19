@@ -448,10 +448,6 @@ If you use this R implementation in your research, please cite both:
 
 ## 🔗 Related Resources
 
-- 💾 **Original Stata package:** [Yotov's website](https://sites.google.com/site/yotovyoto/Home)
-- 📘 **Structural Gravity Book:** Yotov et al. (2016), [*An Advanced Guide to Trade Policy Analysis*](https://www.wto.org/english/res_e/publications_e/advancedwtounctad2016_e.htm)
-- 🚀 **fixest package:** Bergé (2018), [Documentation](https://lrberge.github.io/fixest/)
-- 🌍 **USITC Gravity Portal:** [Dynamic Gravity Dataset](https://www.usitc.gov/data/gravity/)
 - 📊 **Stata Comparison:** See `GEPPML_stata/` folder in this repository
 
 ---
