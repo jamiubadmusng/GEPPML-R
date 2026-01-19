@@ -1,6 +1,6 @@
 # GEPPML-R Change Log
 
-## Version 1.0.0 (2025-09-15)
+## Version 1.0.0 (2026-01-19)
 
 ### Initial Release
 
