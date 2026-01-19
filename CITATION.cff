@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the original paper."
+type: software
+title: "GEPPML-R: General Equilibrium Analysis with PPML in R"
+version: 1.0.0
+date-released: 2026-01-19
+authors:
+  - family-names: Badmus
+    given-names: "Jamiu Olamilekan"
+    email: jamiubadmus001@gmail.com
+    affiliation: "United Nations University Institute on Comparative Regional Integration Studies (UNU-CRIS)"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/jamiubadmusng/GEPPML-R"
+url: "https://github.com/jamiubadmusng/GEPPML-R"
+keywords:
+  - international trade
+  - general equilibrium
+  - PPML
+  - gravity model
+  - trade policy
+  - R
+  - econometrics
+license: MIT
+abstract: |
+  GEPPML-R provides an R implementation of the General Equilibrium Poisson 
+  Pseudo-Maximum Likelihood (GEPPML) methodology developed by Anderson, Larch, 
+  and Yotov (2018). This package makes the methodology accessible to R users 
+  and researchers who may not have access to Stata. It uses modern R packages 
+  (data.table and fixest) to provide fast, reliable general equilibrium analysis 
+  of trade policy scenarios.
+
+references:
+  - type: article
+    title: "GEPPML: General equilibrium analysis with PPML"
+    authors:
+      - family-names: Anderson
+        given-names: "James E."
+      - family-names: Larch
+        given-names: Mario
+      - family-names: Yotov
+        given-names: "Yoto V."
+    journal: "The World Economy"
+    volume: 41
+    issue: 10
+    year: 2018
+    start: 2750
+    end: 2782
+    doi: "10.1111/twec.12664"

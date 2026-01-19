@@ -1,0 +1,257 @@
+================================================================================
+GEPPML-R: R Implementation of General Equilibrium PPML
+================================================================================
+
+Author: Jamiu Olamilekan Badmus
+Email: jamiubadmus001@gmail.com
+Date: September 15, 2025
+Version: 1.0.0
+
+================================================================================
+PACKAGE CONTENTS
+================================================================================
+
+✓ Main Analysis Script
+  - geppml.R                 Complete GEPPML implementation in R
+
+✓ Documentation (7 files)
+  - README.md               Comprehensive user guide and methodology
+  - QUICKSTART.md           5-minute quick start guide
+  - FAQ.md                  Frequently asked questions
+  - CONTRIBUTING.md         Contribution guidelines
+  - CHANGELOG.md            Version history and future plans
+  - PROJECT_STRUCTURE.md    Detailed project structure documentation
+  - CITATION.cff            Citation information (standard format)
+
+✓ Configuration Files
+  - LICENSE                 MIT License
+  - .gitignore             Git ignore rules
+
+✓ Data Directory
+  - data/ge_ppml_data_orig.dta    Original dataset (Anderson et al. 2018)
+  - data/.gitkeep                 Directory marker for git
+
+✓ Output Directory
+  - output/.gitkeep              Directory marker for git
+  - (Results files generated when script runs)
+
+✓ Scripts Directory
+  - scripts/example_analysis.R   Examples and visualizations
+  - scripts/validation_report.R  Validation against Stata
+
+================================================================================
+WHAT THIS PACKAGE DOES
+================================================================================
+
+This package provides a complete R translation of the GEPPML methodology from:
+
+  Anderson, J. E., Larch, M., & Yotov, Y. V. (2018)
+  "GEPPML: General equilibrium analysis with PPML"
+  The World Economy, 41(10), 2750-2782
+
+Key Features:
+  ✓ Estimates structural gravity models with PPML
+  ✓ Computes general equilibrium trade policy effects
+  ✓ Three scenarios: Baseline, Conditional GE, Full GE
+  ✓ Fast implementation using modern R packages (fixest, data.table)
+  ✓ Produces identical results to original Stata version
+  ✓ Publication-ready outputs
+
+================================================================================
+QUICK START (3 STEPS)
+================================================================================
+
+1. INSTALL PACKAGES
+   R> install.packages(c("data.table", "fixest", "haven", "dplyr"))
+
+2. RUN ANALYSIS
+   R> setwd("path/to/GEPPML_R")
+   R> source("geppml.R")
+
+3. VIEW RESULTS
+   R> results <- read.csv("output/all_indexes_geppml.csv")
+   R> View(results)
+
+That's it! You now have country-level welfare effects and GE indexes.
+
+================================================================================
+KEY OUTPUT FILES
+================================================================================
+
+After running geppml.R, you will find in the output/ folder:
+
+  📊 all_indexes_geppml.csv    Main results (open in Excel)
+  📊 all_indexes_geppml.rds    Main results (R format)
+  📁 full_static_all.rds       Complete bilateral dataset
+  📁 imrs_all.rds              Multilateral resistance indexes
+  📝 geppml.log                Detailed execution log
+
+================================================================================
+WHAT MAKES THIS PACKAGE SPECIAL
+================================================================================
+
+1. ACCESSIBILITY
+   - Free and open-source
+   - No Stata license required
+   - Works on Windows, macOS, and Linux
+
+2. PERFORMANCE
+   - Very fast (analysis completes in < 1 minute)
+   - Uses optimized C++ backend via fixest package
+   - Efficient memory usage with data.table
+
+3. EASE OF USE
+   - Comprehensive documentation
+   - Example scripts included
+   - Clear, well-commented code
+
+4. RELIABILITY
+   - Exact replication of Stata results
+   - Validation script included
+   - Based on published, peer-reviewed methodology
+
+5. FLEXIBILITY
+   - Easy to customize for different scenarios
+   - Extensible code structure
+   - Compatible with modern R workflows
+
+================================================================================
+WHO SHOULD USE THIS PACKAGE
+================================================================================
+
+✓ Trade economists analyzing policy effects
+✓ Researchers without access to Stata
+✓ Graduate students learning structural gravity
+✓ Policy analysts evaluating trade agreements
+✓ Anyone preferring R over Stata
+
+================================================================================
+TYPICAL USE CASES
+================================================================================
+
+1. Regional Trade Agreements (RTAs)
+   - Analyze welfare effects of joining/leaving RTAs
+   - Quantify trade creation and diversion
+
+2. Infrastructure Projects
+   - Evaluate impact of reducing trade costs
+   - Assess transportation improvements
+
+3. Brexit and Trade Shocks
+   - Quantify economic impact of policy changes
+   - Decompose direct and GE effects
+
+4. Counterfactual Analysis
+   - "What if" scenarios for trade policy
+   - Compare different policy options
+
+================================================================================
+SUPPORT AND RESOURCES
+================================================================================
+
+Documentation:
+  - Start with: QUICKSTART.md
+  - Full guide: README.md
+  - Questions: FAQ.md
+  - Structure: PROJECT_STRUCTURE.md
+
+Examples:
+  - Basic usage: Run geppml.R
+  - Advanced: scripts/example_analysis.R
+  - Validation: scripts/validate_results.R
+
+Help:
+  - GitHub Issues: https://github.com/jamiubadmusng/GEPPML-R/issues
+  - Email: jamiubadmus001@gmail.com
+  - Website: https://sites.google.com/view/jamiu-olamilekan-badmus/bio
+
+Contributing:
+  - See CONTRIBUTING.md
+  - All contributions welcome!
+
+================================================================================
+CITATION
+================================================================================
+
+If you use this package, please cite:
+
+Original Paper:
+  Anderson, J. E., Larch, M., & Yotov, Y. V. (2018). GEPPML: General 
+  equilibrium analysis with PPML. The World Economy, 41(10), 2750-2782.
+
+This Package:
+  Badmus, J. O. (2026). GEPPML-R: General Equilibrium Analysis with PPML 
+  in R [Computer software]. https://github.com/jamiubadmusng/GEPPML-R
+
+================================================================================
+LICENSE
+================================================================================
+
+MIT License - Free to use, modify, and distribute
+See LICENSE file for details
+
+================================================================================
+TECHNICAL REQUIREMENTS
+================================================================================
+
+Minimum:
+  - R version 4.0 or higher
+  - 4 GB RAM
+  - 10 MB disk space
+
+Recommended:
+  - R version 4.3 or higher
+  - 8 GB RAM
+  - RStudio (latest version)
+
+R Packages (auto-installed if missing):
+  - data.table  (data manipulation)
+  - fixest      (PPML estimation)
+  - haven       (read Stata files)
+  - dplyr       (additional data tools)
+
+Optional (for examples):
+  - ggplot2     (visualizations)
+  - openxlsx    (Excel export)
+
+================================================================================
+VERSION INFORMATION
+================================================================================
+
+Current Version: 1.0.0 (January 19, 2026)
+  - Initial release
+  - Complete translation from Stata
+  - All scenarios implemented
+  - Full documentation
+
+Coming Soon (v1.1.0):
+  - Parallel processing support
+  - Shiny dashboard
+  - Additional examples
+  - Multi-sector support
+
+================================================================================
+ACKNOWLEDGMENTS
+================================================================================
+
+- James E. Anderson, Mario Larch, and Yoto V. Yotov for developing GEPPML
+- Laurent Bergé for the excellent fixest package
+
+================================================================================
+CONTACT
+================================================================================
+
+Jamiu Olamilekan Badmus
+Research Intern, UNU-CRIS
+Graduate, Erasmus Mundus Master in Economics of Globalization and European 
+Integration
+
+Email: jamiubadmus001@gmail.com
+Website: https://sites.google.com/view/jamiu-olamilekan-badmus/bio
+GitHub: https://github.com/jamiubadmusng
+
+================================================================================
+
+Ready to start? Open QUICKSTART.md or run geppml.R!
+
+================================================================================

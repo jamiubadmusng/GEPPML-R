@@ -1,0 +1,34 @@
+# R files
+.Rhistory
+.RData
+.Rproj.user
+.Ruserdata
+*.Rproj
+
+# Output files (keep structure but not large outputs)
+output/*.rds
+output/*.dta
+output/*.csv
+output/*.log
+data/ge_ppml_data.rds
+
+# Keep directory structure
+!output/.gitkeep
+!data/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+*~
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# R package development
+*.tar.gz
+*.zip
+/Meta/
+/doc/
+/*.Rcheck/
