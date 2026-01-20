@@ -41,7 +41,7 @@ This repository provides a **complete R implementation** of the General Equilibr
 **Jamiu Olamilekan Badmus**
 
 - 🏛️ Research Intern, Economic and Political Interactions Cluster  
-  United Nations University Institute on Comparative Regional Integration Studies ([UNU-CRIS](https://cris.unu.edu/))
+  United Nations University Institute on Comparative Regional Integration Studies ([UNU-CRIS]([https://cris.unu.edu/](https://cris.unu.edu/jamiu-badmus)))
 - 🎓 Erasmus Mundus Master in Economics of Globalization and European Integration
 - 📧 Email: jamiubadmus001@gmail.com
 - 🌐 Website: [jamiu-olamilekan-badmus](https://sites.google.com/view/jamiu-olamilekan-badmus/bio)
