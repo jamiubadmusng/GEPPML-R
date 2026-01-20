@@ -512,9 +512,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 🙏 Acknowledgments
 
-- **James E. Anderson, Mario Larch, and Yoto V. Yotov** for developing the GEPPML methodology
+- **James E. Anderson, Mario Larch, and Yoto V. Yotov** for developing and sharing the GEPPML methodology
 - **Laurent Bergé** for the excellent `fixest` package  
-- **UNU-CRIS** for supporting this research
 
 ---
 
