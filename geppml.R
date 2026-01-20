@@ -1,12 +1,10 @@
 ################################################################################
-# GEPPML: General Equilibrium Analysis with PPML in R (CORRECTED VERSION)
+# GEPPML: General Equilibrium Analysis with PPML in R
 ################################################################################
 #
 # R Implementation of Anderson, J. E., Larch, M., & Yotov, Y. V. (2018)
 # "GEPPML: General equilibrium analysis with PPML"
 # The World Economy, 41(10), 2750-2782
-#
-# CORRECTED to exactly match Stata output
 #
 # Translated from Stata to R by: Jamiu Olamilekan Badmus
 # Email: jamiubadmus001@gmail.com
@@ -44,7 +42,7 @@ sink(log_file, type = "output", split = TRUE)
 sink(log_file, type = "message")
 
 cat("================================================================================\n")
-cat("GEPPML: General Equilibrium Analysis with PPML in R (CORRECTED)\n")
+cat("GEPPML: General Equilibrium Analysis with PPML in R\n")
 cat("================================================================================\n")
 cat("Script started at:", format(Sys.time(), "%Y-%m-%d %H:%M:%S"), "\n")
 cat("================================================================================\n\n")
